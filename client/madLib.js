@@ -20,10 +20,10 @@ Template.body.events({
 	'click #submitButton': function(event, template){
 		event.preventDefault();
 		console.log('Hello World..');
-		exclamation = template.find('#exclamation').value;
-		adverb = template.find('#adverb').value;
-		noun = template.find('#noun').value;
-		verb = template.find('#verb').value;
+		const exclamation = template.find('#exclamation').value;
+		const adverb = template.find('#adverb').value;
+		const noun = template.find('#noun').value;
+		const verb = template.find('#verb').value;
 
 		console.log(exclamation + "! you say, as you " +adverb + 
 			" jump onto your " + noun + " and " + verb + " into the sunset.");
