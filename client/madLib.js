@@ -15,7 +15,9 @@ Template.body.events({
 
 		madLib = exclamation + "! you say, as you " +adverb + 
 			" jump onto your " + noun + " and " + verb + " into the sunset.";
-		$('#createMadLib').append(madLib);
-		$('#createMadLib').css("color","#0000ff");
+		$("#createMadLib").hide();	
+		$('#createMadLib').text(madLib).css("color","#0000ff").fadeIn('slow', function(){
+
+		});
 	}
 });
